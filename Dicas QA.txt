@@ -1,0 +1,3 @@
+Dicas QA
+
+- Playwright tem uma ferramenta chamada codegen que funciona parecido com Ghost inspector, mas em vez de salvar em uma plataforma no-code, ele gera código TypeScript automaticamente.

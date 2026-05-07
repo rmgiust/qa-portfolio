@@ -34,7 +34,7 @@
 **EN:** Full execution report and technical artifacts:
 **PT:** Relatório completo de execução e artefatos técnicos:
 
-* 📂 [QA_Test_Execution_Report.pdf](./QA_Test_Execution_Report_Final.pdf) 
+* 📂 [QA_Test_Execution_Report.pdf](./QA_Test_Execution_Report.pdf) 
 * 📂 `test-export.json` (Ghost Inspector Export)
 
 ---

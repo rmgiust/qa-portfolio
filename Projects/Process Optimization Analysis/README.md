@@ -1,6 +1,6 @@
 # QA Process Optimization Analysis
 
-## Português
+## 🇧🇷 Português
 ### Sobre o Projeto
 
 Análise detalhada de métricas de qualidade (QA) focada na otimização de
@@ -17,7 +17,7 @@ software.
 3. Processo de **Quarentena** para testes instáveis (flaky).
 ---
 
-## English
+## 🇺🇸 English
 ### About the Project
 
 Detailed analysis of quality metrics (QA) focused on process optimization. This
@@ -30,3 +30,6 @@ decisions to improve software reliability.
 ### Action Plan
 1. **Shift-Left Testing** implementation.
 2. Automated **Smoke Testing** in production.
+---
+
+[📄 View Full Analysis (PDF)](https://github.com/rmgiust/qa-portfolio/blob/main/Projects/Process%20Optimization%20Analysis/QA_Process_Optimization_Analysis.pdf)

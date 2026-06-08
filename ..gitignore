@@ -1,0 +1,6 @@
+*.log
+node_modules/
+QA_Estudo/
+Certificados/
+_Outros/
+QA Transcripts/

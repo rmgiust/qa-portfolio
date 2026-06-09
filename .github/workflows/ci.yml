@@ -1,0 +1,21 @@
+name: Java Library Unit Testing
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4.1.7 
+
+      - name: Set up JDK
+        uses: actions/setup-java@v4.2.1 
+        with:
+          java-version: '26.0.1'
+          distribution: 'temurin'
+
+      - name: Build with Maven
+        working-directory: ./Projects/calculator-unit-ci
+        run: mvn -B test

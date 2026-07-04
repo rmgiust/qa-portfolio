@@ -48,19 +48,24 @@ saucedemo-pom-architecture/
 ├── cypress.config.js                # Configurações de Viewport e Base URL
 ├── package.json                     # Manifesto de dependências e scripts Node
 └── README.md
+```
 
 ## 🚀 🇧🇷 Como Executar o Projeto / 🇺🇸 How to Run the Project
-1. 🇧🇷 Pré-requisitos / 🇺🇸 Prerequisites
+
+### 1. 🇧🇷 Pré-requisitos / 🇺🇸 Prerequisites
 * Node.js (v18+)
 
-2. 🇧🇷 Instalação / 🇺🇸 Installation
-# Instalar as dependências do projeto
-```bash id="x9gbfp"
+### 2. 🇧🇷 Instalação / 🇺🇸 Installation
+Para instalar as dependências, execute:
+```bash
 npm install
 ```
-3. 🇧🇷 Execução dos Testes / 🇺🇸 Running Tests
-# Abrir a interface gráfica do Cypress (Modo Desenvolvimento)
+### 3. 🇧🇷 Execução dos Testes / 🇺🇸 Running Tests
+Para abrir a interface gráfica do Cypress (Modo Desenvolvimento):
+```bash
 npm run cy:open
-
-# Executar os testes via terminal (Modo Headless / CI)
+```
+### 4. Para executar os testes via terminal (Modo Headless / CI):
+```bash
 npm run cy:run
+```

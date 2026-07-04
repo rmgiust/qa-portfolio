@@ -31,5 +31,5 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
-          working-directory: Projects/saucedemo-pom-architecture
+          working-directory: ./Projects/saucedemo-pom-architecture
           command: npx cypress run

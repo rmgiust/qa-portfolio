@@ -1,0 +1,1 @@
+// Comandos customizados não utilizados, a arquitetura prioriza o padrão POM

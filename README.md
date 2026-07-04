@@ -8,18 +8,18 @@ Repositório profissional focado em Quality Assurance moderno. Especializado na 
 
 ## 👨‍💻 Focus & Career | Foco e Carreira
 - **Role:** QA Automation Engineer
-- **Main Stack:** TypeScript, Playwright, and Cypress.
+- **Main Stack:** JavaScript and Cypress.
 - **Approach:** Reliable, fast, and scalable automated testing for modern web applications.
 
 - **Cargo:** Engenheiro de Automação de QA
-- **Stack Principal:** TypeScript, Playwright e Cypress.
+- **Stack Principal:** JavaScript e Cypress.
 - **Abordagem:** Testes automatizados confiáveis, rápidos e escaláveis para aplicações web modernas.
 
 ---
 
 ## 🛠️ Tech Stack | Tecnologias
-* **Languages:** TypeScript (Strongly Typed Automation).
-* **Frameworks:** Playwright & Cypress.
+* **Languages:** JavaScript.
+* **Frameworks:** Cypress.
 * **Environment:** Node.js, Git, GitHub, VS Code.
 * **Concepts:** Page Object Model (POM), E2E Testing, CI/CD Pipelines.
 
@@ -33,16 +33,6 @@ All projects are located in the `/Projects` folder:
 * **PT:** Testes E2E completos para fluxos críticos de e-commerce (Login, Carrinho, Checkout) com foco em seletores modernos e confiabilidade.
 
 *(New projects with Playwright/Cypress coming soon!)*
-
----
-
-## 🚀 Learning Roadmap | Plano de Estudos
-- [ ] **Playwright + TypeScript:** Mastery of advanced Locators, Parallel execution, and Trace Viewer.
-- [ ] **Cypress:** Advanced component testing and API mocking.
-- [ ] **CI/CD:** Automating test execution with GitHub Actions on every Pull Request.
-- [ ] **Playwright + TypeScript:** Domínio de Locators avançados, execução paralela e Trace Viewer.
-- [ ] **Cypress:** Testes de componentes avançados e mocking de APIs.
-- [ ] **CI/CD:** Automação de execução de testes com GitHub Actions em cada Pull Request.
 
 ---
 

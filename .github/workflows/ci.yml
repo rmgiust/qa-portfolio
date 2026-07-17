@@ -42,10 +42,10 @@ jobs:
         run: npm install -g newman wait-on
 
       - name: Subir API ServeRest em Segundo Plano (Background)
-        run: npx serverest@latest &
+        run: npx serverest@latest --silent > /dev/null 2>&1 &
 
       - name: Aguardar a API ficar Online (Quality Gate)
-        run: wait-on http://localhost:3000
+        run: wait-on -t 30000 http://localhost:3000
 
       - name: Executar Suite do Postman via Newman com Injeção de URL
         working-directory: ./Projects/serverest-ecommerce-api-e2e-automation

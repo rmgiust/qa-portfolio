@@ -1,35 +1,39 @@
-# QA Process Optimization Analysis
+# 🇧🇷 Análise de Otimização de Processos de QA | 🇺🇸 QA Process Optimization Analysis
 
-## 🇧🇷 Português
-### Sobre o Projeto
+⚠️ `CI/CD Status: Strategic Documentation (Analytical Artifact)`
 
-Análise detalhada de métricas de qualidade (QA) focada na otimização de
-processos. Este documento serve como um estudo de caso sobre como transformar
-dados brutos em decisões estratégicas para melhorar a confiabilidade do
-software.
-### Problemas Identificados
-- Queda na confiabilidade dos testes (80%) apesar do aumento da cobertura.
-- Alta taxa de vazamento de defeitos (Defect Leakage).
-- Impacto negativo na adoção do usuário final devido à instabilidade.
-### Plano de Ação
-1. Implementação de **Shift-Left Testing**.
-2. Criação de **Smoke Tests** automatizados em produção.
-3. Processo de **Quarentena** para testes instáveis (flaky).
 ---
 
-## 🇺🇸 English
-### About the Project
+### 📌 Quick Specs | Especificações Rápidas
 
-Detailed analysis of quality metrics (QA) focused on process optimization. This
-document serves as a case study on transforming raw data into strategic
-decisions to improve software reliability.
-### Identified Issues
-- Dropping test reliability (80%) despite coverage growth.
-- High Defect Leakage rate.
-- Negative impact on User Adoption due to instability.
-### Action Plan
-1. **Shift-Left Testing** implementation.
-2. Automated **Smoke Testing** in production.
+| 🛠️ Tool / Tooling | 📂 Folder Context | 🎯 Deliverable | 📈 Framework / Agile |
+| :--- | :--- | :--- | :--- |
+| **QA Metrics / Strategic Data** | `/Projects/Process Optimization Analysis` | Executive Analytical Report (PDF) | Agile Governance & Quality KPIs |
+
 ---
 
-[📄 View Full Analysis (PDF)](https://github.com/rmgiust/qa-portfolio/blob/main/Projects/Process%20Optimization%20Analysis/QA_Process_Optimization_Analysis.pdf)
+## 🎯 Project Objective | Objetivo do Projeto
+
+* **🇧🇷 PT:** Decodificar dados brutos e métricas de engenharia coletadas ao longo de um trimestre para identificar gargalos operacionais, traduzindo falhas técnicas em planos de ação táticos que gerem valor real para o negócio e aumentem a confiabilidade do produto.
+* **🇺🇸 EN:** Decode raw software engineering metrics collected over a 3-month period to pinpoint operational bottlenecks, transforming technical gaps into tactical action plans that drive business value and software reliability.
+
+---
+
+## 🧠 Engineering Edge | Diferenciais Técnicos & Visão Estratégica
+
+- **Process Metric Inference:** Análise avançada correlacionando o crescimento da cobertura de testes (72%) à queda de estabilidade das suítes (de 90% para 80%), diagnosticando gargalos como a introdução de testes instáveis (*flaky tests*).
+- **KPI-Driven Governance:** Demonstração prática de maturidade em liderança técnica através da medição de indicadores reais de mercado: MTTD (Mean Time to Detect), MTTR (Mean Time to Repair) e taxa de vazamento de bugs para produção (*Defect Leakage*).
+- **Shift-Left Testing Blueprint:** Estruturação de um plano estratégico focado em qualidade preventiva, desenhando critérios claros de governança ágil com a introdução de barreiras de *Smoke Testing* e rotinas de quarentena de testes.
+
+---
+
+## 📂 Project Structure | Estrutura de Diretórios
+
+```text
+Process Optimization Analysis/
+├── QA_Process_Optimization_Analysis.pdf   # Relatório Executivo Completo
+└── README.md                              # Documentação do componente
+```
+
+##
+#### 💻 Roni Giust | _QA Automation Engineer_ 

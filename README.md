@@ -13,10 +13,10 @@ Para simular o ambiente de engenharia de software de grandes empresas, este proj
 
 ## 🚀 Matriz de Projetos & Soluções
 
-| Projeto | Tecnologia Principal | Categoria de Teste | Status de Execução (CI/CD) | Link de Acesso |
+| Projeto | Tecnologia Principal | Categoria de Teste | Status & Automação | Link de Acesso |
 | :--- | :--- | :--- | :--- | :--- |
 | **Automação UI - SauceDemo** | Cypress + JavaScript | End-to-End (E2E) | ![Cypress UI CI](https://github.com/rmgiust/qa-portfolio/actions/workflows/ci.yml/badge.svg) | [Acessar Componente ↗](./Projects/saucedemo-pom-architecture) |
-| **Automação API - ServeRest** | Postman + Newman CLI | Integração & Contrato | ![Newman API CI](https://github.com/rmgiust/qa-portfolio/actions/workflows/ci.yml/badge.svg) | [Acessar Componente ↗](./Projects/serverest-ecommerce-api-e2e-automation) |
+| **Automação API - ServeRest** | Postman + Newman CLI | Integração & Contrato | 💻 `Local Execution (Runner)` | [Acessar Componente ↗](./Projects/serverest-ecommerce-api-e2e-automation) |
 | **Otimização de Processos** | Métricas de QA / Agile | Engenharia Estratégica | 📄 `Documentação Técnica` | [Acessar Componente ↗](./Projects/Process%20Optimization%20Analysis) |
 
 ---

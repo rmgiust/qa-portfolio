@@ -39,13 +39,13 @@ jobs:
           node-version: 18
 
       - name: Instalar Newman e Wait-On globalmente
-        run: npm install -g newman wait-on
+        run:  npm install -g newman wait-on serverest
 
       - name: Subir API ServeRest em Segundo Plano (Background)
-        run: npx -y serverest@latest --silent &
+        run: serverest --silent &
 
       - name: Aguardar a API ficar Online (Quality Gate)
-        run: wait-on -t 30000 http-get://localhost:3000
+        run: wait-on -t 30000 tcp:localhost:3000
 
       - name: Listar arquivos (Debug de Caminho)
         run: |

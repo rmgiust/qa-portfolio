@@ -57,5 +57,5 @@ jobs:
         working-directory: ./Projects/serverest-ecommerce-api-e2e-automation
         run: |
           newman run ServeRest-ECommerce-API-E2E-Automation.postman_collection.json \
-            -e ServeRest-Local.postman_environment.json \
+            -e ServeRest - Local.postman_environment.json \
             --env-var "baseUrl=http://localhost:3000"

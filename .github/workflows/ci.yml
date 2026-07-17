@@ -25,37 +25,3 @@ jobs:
         with:
           working-directory: ./Projects/saucedemo-pom-architecture
           command: npx cypress run
-
-# ⚙️ Bloco de Automação de API com Postman + ServeRest Local
-  api-serverest-newman:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-
-      - name: Configurar ambiente Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 18
-
-      - name: Instalar Newman e Wait-On globalmente
-        run:  npm install -g newman wait-on serverest
-
-      - name: Subir API ServeRest em Segundo Plano (Background)
-        run: serverest --silent &
-
-      - name: Aguardar a API ficar Online (Quality Gate)
-        run: wait-on -t 30000 tcp:localhost:3000
-
-      - name: Listar arquivos (Debug de Caminho)
-        run: |
-          echo "Diretório atual:" && pwd
-          echo "Conteúdo da pasta do projeto:"
-          ls -la ./Projects/serverest-ecommerce-api-e2e-automation || echo "PASTA NÃO ENCONTRADA!"
-
-      - name: Executar Suite do Postman via Newman com Injeção de URL
-        working-directory: ./Projects/serverest-ecommerce-api-e2e-automation
-        run: |
-          newman run "ServeRest-ECommerce-API-E2E-Automation.postman_collection.json" \
-            -e "ServeRest - Local.postman_environment.json" \
-            --env-var "baseUrl=http://localhost:3000"

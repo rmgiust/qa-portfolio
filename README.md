@@ -1,33 +1,36 @@
 # 🎯 QA Engineer Portfolio | Engenharia de Qualidade de Ponta a Ponta
 
-> Bem-vindo ao meu portfólio de Engenharia de Qualidade e Automação de Testes. Este repositório foi arquitetado como um **Monorepo** para centralizar diferentes soluções de testes, utilizando esteiras de CI/CD automatizadas e independentes via GitHub Actions.
+> Bem-vindo ao meu portfólio oficial de Engenharia de Qualidade e Automação de Testes. Este ecossistema foi arquitetado sob a estrutura de um **Monorepo** para centralizar soluções de testes que cobrem desde a estratégia de processos até à automação completa de interface (UI) e testes de integração de API.
 
 ---
 
-## 🛠️ Arquitetura do Repositório & DevOps Edge
+## 🛠️ Arquitetura do Repositório & Governança DevOps
 
-Diferente de portfólios convencionais, este projeto utiliza uma arquitetura de **Monorepo Automatizado**. 
-- **Esteiras Inteligentes:** Através de filtros de caminhos (`on.push.paths`), os Workflows do GitHub Actions só são disparados para o projeto que sofreu alterações, otimizando o tempo de execução e simulando cenários reais de grandes empresas.
+Para simular o ambiente de engenharia de software de grandes empresas, este projeto utiliza uma arquitetura unificada de **Monorepo**:
+- **Gatilhos Inteligentes via CI/CD:** O pipeline do GitHub Actions foi configurado com filtros estritos de caminhos estruturais (`on.push.paths`). As esteiras automatizadas de integração contínua só são disparadas se houver alterações reais no código do respetivo projeto, otimizando o consumo de infraestrutura na cloud e simulando um ambiente real de produção.
 
 ---
 
-## 🚀 Matriz de Projetos
+## 🚀 Matriz de Projetos & Soluções
 
-| Projeto | Tecnologia Principal | Categoria | Status da Esteira (CI/CD) | Link Direto |
+| Projeto | Tecnologia Principal | Categoria de Teste | Status de Execução (CI/CD) | Link de Acesso |
 | :--- | :--- | :--- | :--- | :--- |
-| **Automação E2E - SauceDemo** | Cypress + JavaScript | Web / UI (POM) | ![Cypress CI](https://github.com/SEU_USUARIO/qa-portfolio/actions/workflows/SUA_ESTEIRA_CYPRESS.yml/badge.svg) | [Acessar Projeto ↗](./e2e) |
-| **Automação de API - ServeRest** | Postman + Newman | API / E2E Integration | ![API CI](https://github.com/SEU_USUARIO/qa-portfolio/actions/workflows/SUA_ESTEIRA_POSTMAN.yml/badge.svg) | [Acessar Projeto ↗](./api) |
-| **Quality Gate Pipeline** | GitHub Actions + ChatOps | DevOps / CI-CD | ![Pipeline Status](https://github.com/SEU_USUARIO/qa-portfolio/actions/workflows/SUA_ESTEIRA_PRINCIPAL.yml/badge.svg) | Em construção |
-| **Análise de Otimização de Processos** | Métricas de QA / Agile | Gestão / Estratégia | `N/A` | [Acessar Projeto ↗](./Projects/Process%20Optimization%20Analysis) |
+| **Automação UI - SauceDemo** | Cypress + JavaScript | End-to-End (E2E) | ![Cypress UI CI](https://github.com/rmgiust/qa-portfolio/actions/workflows/ci.yml/badge.svg) | [Acessar Componente ↗](./Projects/saucedemo-pom-architecture) |
+| **Automação API - ServeRest** | Postman + Newman CLI | Integração & Contrato | ![Newman API CI](https://github.com/rmgiust/qa-portfolio/actions/workflows/ci.yml/badge.svg) | [Acessar Componente ↗](./Projects/serverest-ecommerce-api-e2e-automation) |
+| **Otimização de Processos** | Métricas de QA / Agile | Engenharia Estratégica | 📄 `Documentação Técnica` | [Acessar Componente ↗](./Projects/Process%20Optimization%20Analysis) |
 
 ---
 
-## 📁 Estrutura de Pastas
+## 📂 Visão Geral da Árvore de Diretórios
 
-```microtext
+```text
 qa-portfolio/
-├── .github/workflows/       # Centralização das esteiras de CI/CD (GitHub Actions)
-├── e2e/                     # Automação de Interface (Cypress com Page Objects)
-├── api/                     # Automação de Testes de API (Postman / Newman)
+├── .github/workflows/
+│   └── ci.yml                            # Governança de CI/CD (Cypress & Postman/Newman)
 └── Projects/
-    └── Process Optimization/ # Documentação e Análise Estratégica (Métricas de QA)
+    ├── Process Optimization Analysis/    # Engenharia de processos, KPIs e relatórios analíticos
+    ├── saucedemo-pom-architecture/       # Automação Web utilizando o padrão Page Objects (POM)
+    └── serverest-ecommerce-api-e2e-automation/ # Validação de contratos HTTP e testes em lote com Newman
+```
+---
+#### 💻 Roni Giust | _QA Automation Engineer_ 

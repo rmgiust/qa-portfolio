@@ -56,6 +56,6 @@ jobs:
       - name: Executar Suite do Postman via Newman com Injeção de URL
         working-directory: ./Projects/serverest-ecommerce-api-e2e-automation
         run: |
-          newman run ServeRest-ECommerce-API-E2E-Automation.postman_collection.json \
-            -e ServeRest - Local.postman_environment.json \
+          newman run "ServeRest-ECommerce-API-E2E-Automation.postman_collection.json" \
+            -e "ServeRest - Local.postman_environment.json" \
             --env-var "baseUrl=http://localhost:3000"

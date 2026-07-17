@@ -42,14 +42,12 @@ jobs:
         run: npm install -g newman wait-on
 
       - name: Subir API ServeRest em Segundo Plano (Background)
-        # Removido o ocultador de erros (> /dev/null 2>&1) para você ver o log caso o ServeRest falhe
-        run: npx serverest@latest --silent &
+        run: npx -y serverest@latest --silent &
 
       - name: Aguardar a API ficar Online (Quality Gate)
-        run: wait-on -t 30000 http://localhost:3000/usuarios
+        run: wait-on -t 30000 http-get://localhost:3000
 
       - name: Listar arquivos (Debug de Caminho)
-        # Esse passo garante que a pasta e os arquivos realmente existem no Linux
         run: |
           echo "Diretório atual:" && pwd
           echo "Conteúdo da pasta do projeto:"

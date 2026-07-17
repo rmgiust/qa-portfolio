@@ -1,37 +1,50 @@
-# 🎯 QA Engineer Portfolio | Engenharia de Qualidade de Ponta a Ponta
-
-> Bem-vindo ao meu portfólio oficial de Engenharia de Qualidade e Automação de Testes. Este ecossistema foi arquitetado sob a estrutura de um **Monorepo** para centralizar soluções de testes que cobrem desde a estratégia de processos até à automação completa de interface (UI) e testes de integração de API.
+# 🇧🇷 [API] Automação End-to-End & Validação de Contrato - ServeRest | 🇺🇸 [API] End-to-End Automation & Contract Validation
 
 </br>
 
-## 🛠️ Arquitetura do Repositório & Governança DevOps
+### 📌 Quick Specs | Especificações Rápidas
 
-Para simular o ambiente de engenharia de software de grandes empresas, este projeto utiliza uma arquitetura unificada de **Monorepo**:
-- **Gatilhos Inteligentes via CI/CD:** O pipeline do GitHub Actions foi configurado com filtros estritos de caminhos estruturais (`on.push.paths`). As esteiras automatizadas de integração contínua só são disparadas se houver alterações reais no código do respetivo projeto, otimizando o consumo de infraestrutura na cloud e simulando um ambiente real de produção.
-
-</br>
-
-## 🚀 Matriz de Projetos & Soluções
-
-| Projeto | Tecnologia Principal | Categoria de Teste | Status de Execução (CI/CD) | Link de Acesso |
-| :--- | :--- | :--- | :--- | :--- |
-| **Automação UI - SauceDemo** | Cypress + JavaScript | End-to-End (E2E) | ![Cypress UI CI](https://github.com/rmgiust/qa-portfolio/actions/workflows/ci.yml/badge.svg) | [Acessar Componente ↗](./Projects/saucedemo-pom-architecture) |
-| **Automação API - ServeRest** | Postman + Newman CLI | Integração & Contrato | ![Newman API CI](https://github.com/rmgiust/qa-portfolio/actions/workflows/ci.yml/badge.svg) | [Acessar Componente ↗](./Projects/serverest-ecommerce-api-e2e-automation) |
-| **Otimização de Processos** | Métricas de QA / Agile | Engenharia Estratégica | 📄 `Documentação Técnica` | [Acessar Componente ↗](./Projects/Process%20Optimization%20Analysis) |
+| 🛠️ Tool / Tooling | 📂 Folder Context | 🎯 Test Type | 🌐 Target SUT |
+| :--- | :--- | :--- | :--- |
+| **Postman + Collection Runner** | `/Projects/serverest-ecommerce-api-e2e-automation` | API Integration / Contract | ServeRest Local (`localhost:3000`) |
 
 </br>
 
-## 📂 Visão Geral da Árvore de Diretórios
+## 🎯 Project Objective | Objetivo do Projeto
 
-```text
-qa-portfolio/
-├── .github/workflows/
-│   └── ci.yml                            # Governança de CI/CD (Cypress & Postman/Newman)
-└── Projects/
-    ├── Process Optimization Analysis/    # Engenharia de processos, KPIs e relatórios analíticos
-    ├── saucedemo-pom-architecture/       # Automação Web utilizando o padrão Page Objects (POM)
-    └── serverest-ecommerce-api-e2e-automation/ # Validação de contratos HTTP e testes em lote com Newman
-```
-    
+* **🇧🇷 PT:** Validar a integridade das regras de negócio do back-end e a conformidade dos contratos de rotas HTTP de um ecossistema de e-commerce (Usuários, Login, Produtos e Carrinhos), utilizando massa de dados dinâmica e validando esquemas JSON.
+* **🇺🇸 EN:** Validate back-end business rule integrity and HTTP contract compliance across an e-commerce ecosystem, using dynamic data generation and JSON schema validation.
+
+</br>
+
+## 🧠 Engineering Edge | Diferenciais Técnicos
+
+- **Dynamic Data Generation:** Uso intensivo de bibliotecas nativas de JavaScript para gerar massa de dados aleatória em tempo de execução, garantindo testes menos dependentes de dados estáticos.
+- **Contract Testing:** Validação de *schemas* JSON para assegurar que a API responde exatamente o que o contrato estipula.
+- **Idempotência:** Scripts desenhados para limpar os dados criados (Teardown), mantendo o ambiente de testes sempre limpo para a próxima execução.
+
+</br>
+
+## ⚙️ How to Run | Como Executar
+
+### 1. Iniciar a API Local
+Certifique-se de ter o `serverest` instalado e rodando na sua máquina:
+
+>npx serverest@latest
+
+### 2. Executar via Postman
+1. Importe os arquivos .json desta pasta para o seu Postman.
+
+2. Selecione o ambiente ServeRest-Local no canto superior direito.
+
+3. Utilize o Collection Runner para executar a suite completa.
+
+</br>
+
+## 🛡️ CI/CD Implementation Note | Nota sobre CI/CD
+
+Status: Local Execution (Runner).
+Atualmente, esta suíte de testes de API foi projetada para execução local via Postman/Newman. A integração desta suíte específica na esteira de CI/CD global (GitHub Actions) está em fase de refinamento de infraestrutura (migração para execução headless via Newman), visando garantir estabilidade e evitar gargalos no pipeline.
+
 ##
 #### 💻 Roni Giust | _QA Automation Engineer_ 

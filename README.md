@@ -1,41 +1,33 @@
-# 🚀 QA Automation Portfolio | Portfólio de Automação de QA
+# 🎯 QA Engineer Portfolio | Engenharia de Qualidade de Ponta a Ponta
 
-Professional repository focused on modern Software Quality Assurance. I specialize in building high-performance automation suites using the industry's leading tools for End-to-End (E2E) testing.
-
-Repositório profissional focado em Quality Assurance moderno. Especializado na construção de suítes de automação de alta performance utilizando as principais ferramentas do mercado para testes Fim-a-Fim (E2E).
+> Bem-vindo ao meu portfólio de Engenharia de Qualidade e Automação de Testes. Este repositório foi arquitetado como um **Monorepo** para centralizar diferentes soluções de testes, utilizando esteiras de CI/CD automatizadas e independentes via GitHub Actions.
 
 ---
 
-## 👨‍💻 Focus & Career | Foco e Carreira
-- **Role:** QA Automation Engineer
-- **Main Stack:** JavaScript and Cypress.
-- **Approach:** Reliable, fast, and scalable automated testing for modern web applications.
+## 🛠️ Arquitetura do Repositório & DevOps Edge
 
-- **Cargo:** Engenheiro de Automação de QA
-- **Stack Principal:** JavaScript e Cypress.
-- **Abordagem:** Testes automatizados confiáveis, rápidos e escaláveis para aplicações web modernas.
+Diferente de portfólios convencionais, este projeto utiliza uma arquitetura de **Monorepo Automatizado**. 
+- **Esteiras Inteligentes:** Através de filtros de caminhos (`on.push.paths`), os Workflows do GitHub Actions só são disparados para o projeto que sofreu alterações, otimizando o tempo de execução e simulando cenários reais de grandes empresas.
 
 ---
 
-## 🛠️ Tech Stack | Tecnologias
-* **Languages:** JavaScript.
-* **Frameworks:** Cypress.
-* **Environment:** Node.js, Git, GitHub, VS Code.
-* **Concepts:** Page Object Model (POM), E2E Testing, CI/CD Pipelines.
+## 🚀 Matriz de Projetos
+
+| Projeto | Tecnologia Principal | Categoria | Status da Esteira (CI/CD) | Link Direto |
+| :--- | :--- | :--- | :--- | :--- |
+| **Automação E2E - SauceDemo** | Cypress + JavaScript | Web / UI (POM) | ![Cypress CI](https://github.com/SEU_USUARIO/qa-portfolio/actions/workflows/SUA_ESTEIRA_CYPRESS.yml/badge.svg) | [Acessar Projeto ↗](./e2e) |
+| **Automação de API - ServeRest** | Postman + Newman | API / E2E Integration | ![API CI](https://github.com/SEU_USUARIO/qa-portfolio/actions/workflows/SUA_ESTEIRA_POSTMAN.yml/badge.svg) | [Acessar Projeto ↗](./api) |
+| **Quality Gate Pipeline** | GitHub Actions + ChatOps | DevOps / CI-CD | ![Pipeline Status](https://github.com/SEU_USUARIO/qa-portfolio/actions/workflows/SUA_ESTEIRA_PRINCIPAL.yml/badge.svg) | Em construção |
+| **Análise de Otimização de Processos** | Métricas de QA / Agile | Gestão / Estratégia | `N/A` | [Acessar Projeto ↗](./Projects/Process%20Optimization%20Analysis) |
 
 ---
 
-## 📂 Featured Projects | Projetos em Destaque
-All projects are located in the `/Projects` folder:
+## 📁 Estrutura de Pastas
 
-### 🛒 Ecommerce Automation (Ghost)
-* **EN:** Full E2E testing for critical e-commerce flows (Login, Cart, Checkout) with a focus on modern selectors and reliability.
-* **PT:** Testes E2E completos para fluxos críticos de e-commerce (Login, Carrinho, Checkout) com foco em seletores modernos e confiabilidade.
-
-*(New projects with Playwright/Cypress coming soon!)*
-
----
-
-## 📫 Connect with me | Contato
-*Check my GitHub profile for social links and contact info!*
-*Confira meu perfil do GitHub para links sociais e informações de contato!*
+```microtext
+qa-portfolio/
+├── .github/workflows/       # Centralização das esteiras de CI/CD (GitHub Actions)
+├── e2e/                     # Automação de Interface (Cypress com Page Objects)
+├── api/                     # Automação de Testes de API (Postman / Newman)
+└── Projects/
+    └── Process Optimization/ # Documentação e Análise Estratégica (Métricas de QA)

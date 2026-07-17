@@ -1,35 +1,52 @@
-name: CI/CD Portfolio
+name: CI/CD QA Portfolio
 
-on: [push, pull_request]
+on:
+  push:
+    paths:
+      - 'Projects/saucedemo-pom-architecture/**'
+      - 'Projects/serverest-ecommerce-api-e2e-automation/**'
+      - '.github/workflows/ci.yml'
+  pull_request:
+    paths:
+      - 'Projects/saucedemo-pom-architecture/**'
+      - 'Projects/serverest-ecommerce-api-e2e-automation/**'
+      - '.github/workflows/ci.yml'
 
 jobs:
-  # Calculator Unit
-  test-calculator-java:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4.1.7 
-
-      - name: Set up JDK
-        uses: actions/setup-java@v4.2.1 
-        with:
-          java-version: '26.0.1'
-          distribution: 'temurin'
-
-      - name: Build with Maven
-        working-directory: ./Projects/calculator-unit-ci
-        run: mvn -B test
-  
-  # Sauce Demo
+  # 🌐 Bloco de Automação UI com Cypress (SauceDemo)
   e2e-saucedemo-cypress:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Cypress run
+      - name: Executar Cypress Headless
         uses: cypress-io/github-action@v6
         with:
           working-directory: ./Projects/saucedemo-pom-architecture
           command: npx cypress run
+
+  # ⚙️ Bloco de Automação de API com Postman + ServeRest Local
+  api-serverest-newman:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Configurar ambiente Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Instalar Newman e Wait-On globalmente
+        run: npm install -g newman wait-on
+
+      - name: Subir API ServeRest em Segundo Plano (Background)
+        run: npx serverest@latest &
+
+      - name: Aguardar a API ficar Online (Quality Gate)
+        run: wait-on http://localhost:3000
+
+      - name: Executar Suite do Postman via Newman com Injeção de URL
+        working-directory: ./Projects/serverest-ecommerce-api-e2e-automation
+        run: newman run ServeRest-ECommerce-API-E2E-Automation.postman_collection.json -e ServeRest-Local.postman_environment.json --env-var "baseUrl=http://localhost:3000"
